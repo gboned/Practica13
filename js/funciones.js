@@ -13,3 +13,23 @@ function seleccionarDia() {
     // Añado al elemento seleccionado un atributo checked a true, para que salga seleccionado por defecto el día actual.
     elementoDia.setAttribute("checked", true);
 }
+
+// Añadir función para recibir parámetro de día y devolver el color.
+function devolverColor(dia) {
+    switch (dia.toLowerCase()) {
+        case 'domingo':
+            return 'yellow';
+        case 'lunes':
+            return 'red';
+        case 'martes':
+            return 'green';
+        case 'miercoles':
+            return 'blue';
+        case 'jueves':
+            return 'pink';
+        case 'viernes':
+            return 'orange';
+        case 'sabado':
+            return 'purple';
+    }
+}
