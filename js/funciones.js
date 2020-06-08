@@ -39,3 +39,12 @@ function cambiarColorFondo(dia) {
     var colorDia = dia || obtenerDiaActual();
     document.body.style.backgroundColor=devolverColor(colorDia);
 }
+
+// Añadir variable que selecciona todos los elementos input.
+var opcionesBotones = document.querySelectorAll("input");
+// Recorrer los elementos y añadir un evento a cada uno de ellos.
+opcionesBotones.forEach(function(opcion) {
+    opcion.addEventListener("click", function() {
+        cambiarColorFondo(this.value);
+    });
+})
