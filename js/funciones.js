@@ -33,3 +33,9 @@ function devolverColor(dia) {
             return 'purple';
     }
 }
+
+// Añadir función para que según el día seleccionado, cambie el color de fondo de la página.
+function cambiarColorFondo(dia) {
+    var colorDia = dia || obtenerDiaActual();
+    document.body.style.backgroundColor=devolverColor(colorDia);
+}
