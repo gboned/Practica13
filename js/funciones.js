@@ -16,20 +16,20 @@ function seleccionarDia() {
 
 // Añadir función para recibir parámetro de día y devolver el color.
 function devolverColor(dia) {
-    switch (dia.toLowerCase()) {
-        case 'domingo':
+    switch (dia) {
+        case 0:
             return 'yellow';
-        case 'lunes':
+        case 1:
             return 'red';
-        case 'martes':
+        case 2:
             return 'green';
-        case 'miercoles':
+        case 3:
             return 'blue';
-        case 'jueves':
+        case 4:
             return 'pink';
-        case 'viernes':
+        case 5:
             return 'orange';
-        case 'sabado':
+        case 6:
             return 'purple';
     }
 }
