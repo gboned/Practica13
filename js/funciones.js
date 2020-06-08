@@ -48,3 +48,7 @@ opcionesBotones.forEach(function(opcion) {
         cambiarColorFondo(this.value);
     });
 })
+
+// Llamo a las funciones para que se ejecuten al abrir la página.
+seleccionarDia();
+cambiarColorFondo();
