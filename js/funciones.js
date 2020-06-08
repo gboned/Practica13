@@ -16,7 +16,7 @@ function seleccionarDia() {
 
 // Añadir función para recibir parámetro de día y devolver el color.
 function devolverColor(dia) {
-    switch (dia) {
+    switch (Number(dia)) {
         case 0:
             return 'yellow';
         case 1:
