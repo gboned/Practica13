@@ -1,4 +1,8 @@
-'use strict';
+/********************************/
+/*                              */
+/*     CAMBIO POR FECHA         */
+/*                              */
+/********************************/
 
 // Añadir función para obtener el día de la semana actual.
 function obtenerDiaActual() {
